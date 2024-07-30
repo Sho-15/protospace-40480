@@ -12,6 +12,7 @@
           <%= link_to "削除する", prototype_path(@prototype), data: { turbo_method: :delete }, class: :prototype__btn %>
         </div>
       <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
+      <% end %>
       <div class="prototype__image">
         <%= image_tag @prototype.image %>
       </div>
